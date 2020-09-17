@@ -10,7 +10,7 @@ num=0;
 
 
 $(document).ready( () => {
-  setTimeout(removeGif, 10000)
+  setTimeout(removeGif, 9999)
   setInterval(randWord, 330)
 } )
 
@@ -49,7 +49,8 @@ $(".change").on('click', () => {
   $('.border-in').toggleClass('red')
   $('.border-out').toggleClass('black')
   clicked = !clicked;
-  $('.line').toggleClass('line-red')
+  $('.line-r').toggleClass('line-red')
+  $('.line-l').toggleClass('line-red')
   $('.face1').toggleClass('face1-1')
   $('.face2').toggleClass('face2-2')
   $('.btn-link').toggleClass('link-face')
@@ -81,7 +82,7 @@ $(".change").on('click', () => {
 });
 
 function removeGif(){
-  $('.video-layer').css('background-image', 'none')
+  $('.video-layer').fadeOut().css('background-image', 'none')
   $('.video-layer').css('z-index', '-50')
 }
 
