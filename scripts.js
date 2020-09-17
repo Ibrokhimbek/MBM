@@ -1,4 +1,4 @@
-words = ['1111', '2222', '3333', '4444', '5555'];
+words = ['Awesome', '2222', '3333', '4444', '5555'];
 var count = 0,
 total = words.length,
 pressed = 0,
@@ -82,7 +82,7 @@ $(".change").on('click', () => {
 
 function removeGif(){
   $('.video-layer').css('background-image', 'none')
-  ('.video-layer').css('z-index', '-20')
+  $('.video-layer').css('z-index', '-50')
 }
 
 

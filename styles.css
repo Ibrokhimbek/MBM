@@ -92,15 +92,16 @@
 
 .video-layer{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 1rem;
+    margin: auto auto auto 8px;
+    width: 99%;
+    height: 102%;
     left: 0;
-    background-image: url('img/video-2.gif');
-    background-position: center;
+    /* background-color: #fff; */
+    background-image: url('img/sv7.gif');
+    background-position: top bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 50;
+    z-index: -1;
 }
 
 .frames {
@@ -123,49 +124,49 @@
 
 .border-out {
     display: block;
-    height: 94%;
-    width: 96%;
+    height: 95%;
+    width: auto;
     position: relative;
     overflow: hidden;
     background-color:none; 
     border: 2px double snow;
-    margin: auto auto;
+    margin: auto 6% auto 6%;
     top: -2rem;
 }
 
-@media (min-width: 0) and (max-width: 1200px){
+/* @media (min-width: 0) and (max-width: 1200px){
     .border-out {
         margin: auto;
         top: -1.5rem;
     }
-}
+} */
 
 .border-in{
     display: block;
-    height: 95%;
+    height: 96%;
     width: auto;
     position: relative;
     overflow: hidden;
     background-color: none;
     border: 2px double red;
-    margin: 1rem;
+    margin: .9rem 0.9rem 0.1rem 0.9rem;
 }
 
 
-@media (min-width: 0) and (max-width: 1200px){
+/* @media (min-width: 0) and (max-width: 1200px){
     .border-in {
         bottom: 0.3rem;
     }
-}
+} */
 .main-logo{
     height: 125px;
     width: 170px;
-    background: url("../img/rsz_2rsz_main-logo.png");
+    background: url("img/rsz_2rsz_main-logo.png");
     position: relative;
     margin: -2rem auto;
     right: 0.1rem;
     top: 0rem;
-    z-index: 11;
+    z-index: 100;
 }
 @media (min-width: 0px) and (max-width: 1200px){
     .main-logo{
@@ -186,15 +187,16 @@
 
 .comp-name {
     position: relative;
-    margin: 1.4% auto auto auto;
+    margin: auto auto auto auto;
     color: #fff;
-    font-size: x-large;
+    font-size: large;
     width: fit-content;
     height: fit-content;
     padding: 0.2% 0.4%;
     /* border: 2px double white; */
     z-index: 20;
     background-color: #000;
+    bottom: -1rem;
 }
 
 
@@ -202,11 +204,11 @@
 .motto{
     font: bold;
     color: aliceblue;
-    font-size: 6rem;
+    font-size: 4rem;
     position: relative;
     text-align: center;
     z-index: 40;
-    top: 10rem;
+    top: 17rem;
 }
 
 
@@ -215,7 +217,7 @@
 
 .blog {
     position: relative;
-    width: 150px;
+    width: 160px;
     height: 45px;
 }
 
@@ -268,7 +270,7 @@
     transform: translateY(0) rotateX(0deg);
 }
 
-.blog:nth-child(1) .face.face1,
+/* .blog:nth-child(1) .face.face1,
 .blog:nth-child(1) .face.face2 {
   border-left: none;  
 } 
@@ -276,34 +278,34 @@
 .blog:nth-child(2) .face.face1,
 .blog:nth-child(2) .face.face2 {
   border-right: none;  
-} 
+}  */
 
 
 /* menu positions */
 .blog:nth-child(1){
     position: absolute;
-    top: 45%;
-    left: 0px;
+    top: 52%;
+    left: 7%;
     transform: translate(0, -50%);
 }
 
 .blog:nth-child(2){
     position: absolute;
-    top: 45%;
-    right: 0px;
+    top: 52%;
+    right: 7%;
     transform: translate(0, -50%);
 }
 
 .blog:nth-child(3){
     position: absolute;
-    bottom: 60px;
-    left: 20rem;   
+    bottom: 8.45%;
+    left: 21.65%;   
 }
 
 .blog:nth-child(4){
     position: absolute;
-    bottom: 60px;
-    right: 20rem;  
+    bottom: 8.4%;
+    right: 21.65%;  
 }
 
 .line{
