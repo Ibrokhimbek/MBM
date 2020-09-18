@@ -567,4 +567,26 @@
     }
 }
 
-@media (min-width: 0) and (max-width: 415px)
+@media (min-width: 416) and (max-width: 768px){
+
+}
+
+@media (min-width: 769) and (max-width: 1024px){
+    
+}
+
+@media (min-width: 1025) and (max-width: 1366px){
+    
+}
+
+@media (min-width: 1367) and (max-width: 1440px){
+    
+}
+
+@media (min-width: 1441) and (max-width: 1919px){
+    
+}
+
+@media (min-width: 1920) {
+    
+}
