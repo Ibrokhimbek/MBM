@@ -163,7 +163,7 @@
 .main-logo{
     height: 125px;
     width: 170px;
-    background: url("img/rsz_2rsz_main-logo.png");
+    background: url("img/Logo-black.png");
     position: relative;
     margin: -2rem auto;
     right: 0.1rem;
@@ -213,10 +213,10 @@
 }
 
 .motto{
-    font: normal normal 300 87px/100px;
+    font: normal normal 100 87px/100px;
     font-family: gilroylight;
     color: #BCBDBF;
-    font-size: 4rem;
+    /* font-size: 4rem; */
     position: relative;
     text-align: center;
     z-index: 40;
@@ -542,9 +542,8 @@
     background: #000;
 }
 
-.bg-w{
+/* .bg-w{
     position: absolute;
-    z-index: 500;
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
@@ -553,12 +552,15 @@
     right: 7.45rem;
     top: 4.1rem;
     z-index: -1;
-}
+} */
 
 .bg-b{
     box-shadow: none;
 }
 
+.logo-white{
+    background: url("img/Logo-white.png");
+}
 
 @media (min-width: 0) and (max-width: 415px){
     .video-layer{
@@ -597,7 +599,54 @@
         top: 0rem;
         left: 1rem;
     }
+    .blog {
+        position: relative;
+        width: 145px;
+        height: 45px;
+    }
+    .blog:nth-child(1){
+        position: absolute;
+        top: 51.45%;
+        left: 7.5%;
+        transform: translate(0, -50%);
+    }
     
+    .blog:nth-child(2){
+        position: absolute;
+        top: 51.45%;
+        right: 4.85%;
+        transform: translate(0, -50%);
+    }
+
+    .blog:nth-child(3){
+        position: absolute;
+        bottom: 9.45%;
+        left: 22.4%;   
+    }
+
+    .blog:nth-child(4){
+        position: absolute;
+        bottom: 9.4%;
+        right: 19.75%;  
+    }
+
+    .change{
+        right: 4.96rem;
+        top: 3.76rem;
+        width: 1.3rem;
+        height: 1.3rem;
+        font-size: 70%;
+    }
+
+    #app{
+        margin: 40.5% 5.1% auto auto;
+    }
+
+    .motto{
+        top: 15.2rem;
+        font-size: 3.7rem;
+        font-weight: initial;
+    }
 }
 
 @media (min-width: 1367) and (max-width: 1440px){

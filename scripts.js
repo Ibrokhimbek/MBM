@@ -62,7 +62,7 @@ $(".change").on('click', () => {
   $('.change').toggleClass('change-black')
   $('.bg-logo').toggleClass('white')
   // $('.frames').fadeOut().toggleClass('white').fadeIn()
-  
+  $('.main-logo').toggleClass('logo-white')
   if(clicked){
     $('.frames').animate({
       backgroundColor: 'white'
