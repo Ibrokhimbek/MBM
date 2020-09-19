@@ -575,7 +575,28 @@
     
 }
 
-@media (min-width: 1025) and (max-width: 1366px){
+@media screen and (max-width: 1366px){
+    .video-layer{
+        background-image: url('img/sv04.gif');
+        z-index: -1;
+    
+    }
+    .border-out{
+        position: relative;
+        height: 94%;
+        top: -2.1rem;
+        margin: auto 3.72% auto 6.2%;
+    }
+    .border-in{
+        position: relative;
+        height: 97%;
+        margin: .5rem 0.5rem 0.5rem 0.6rem;
+    }
+    .comp-name{
+        font-size: 1rem;
+        top: 0rem;
+        left: 1rem;
+    }
     
 }
 
