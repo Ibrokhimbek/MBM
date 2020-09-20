@@ -97,7 +97,7 @@
     height: 102%;
     left: 0;
     /* background-color: #fff; */
-    background-image: url('img/sv7.gif');
+    /* background-image: url('img/sv7.gif'); */
     background-position: top bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -213,7 +213,7 @@
 }
 
 .motto{
-    font: normal normal 100 87px/100px;
+    font: normal normal 300 87px/100px;
     font-family: gilroylight;
     color: #BCBDBF;
     /* font-size: 4rem; */
@@ -342,8 +342,45 @@
     opacity: 0.7;
 }
 
+.element-1{
+    width: 150px;
+    height: 120px;
+    position: relative;
+    bottom: 16rem;
+    left: 45%;
+    background-image: url('img/tri-black.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
 
+.elem-1W{
+    background-image: url('img/tri-white.png'); 
+    zoom: 137%;
+    bottom: 12.5rem;
+    left: 43.3%;
+    z-index: 0;
+}
 
+.element-2{
+    width: 270px;
+    height: 250px;
+    position: relative;
+    bottom: 32rem;
+    left: 59%;
+    background-image: url('img/particle-b.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    zoom: 130%;
+    /* z-index:; */
+    opacity: 0.5;
+}
+
+.elem-2W{
+    background-image: url('img/particle-w.png');
+}
 
 /* Language */
 
@@ -562,25 +599,24 @@
     background: url("img/Logo-white.png");
 }
 
-@media (min-width: 0) and (max-width: 415px){
+@media (min-width: 0px) and (max-width: 415px){
     .video-layer{
         background-image: none;
         z-index: -50;
     }
 }
 
-@media (min-width: 416) and (max-width: 768px){
+@media (min-width: 416px) and (max-width: 768px){
 
 }
 
-@media (min-width: 769) and (max-width: 1024px){
+@media (min-width: 769px) and (max-width: 1024px){
     
 }
 
-@media screen and (max-width: 1366px){
+@media (min-width: 1025px) and (max-width: 1366px){
     .video-layer{
         background-image: url('img/sv04.gif');
-        z-index: -1;
     
     }
     .border-out{
@@ -646,15 +682,82 @@
         top: 15.2rem;
         font-size: 3.7rem;
         font-weight: initial;
+        z-index: 1;
     }
 }
 
-@media (min-width: 1367) and (max-width: 1440px){
+@media ( 1367px <= width >= 1440px){
     
 }
 
-@media (min-width: 1441) and (max-width: 1919px){
+@media screen and (max-width: 1919px){
+     .video-layer{
+        background-image: url('img/sv7.gif');
+        z-index: -1;
+    }
+    .border-out{
+        position: relative;
+        height: 95.4%;
+        top: -2.05rem;
+        margin: auto 6.1% auto 6.1%;
+    }
+    .border-in{
+        position: relative;
+        height: 96.1%;
+        margin: .9rem 0.6rem 0rem 0.7rem;
+    }
+    .comp-name{
+        font-size: large;
+        top: -0.4rem;
+    }
+    .blog {
+        position: relative;
+        width: 160px;
+        height: 45px;
+    }
+    .blog:nth-child(1){
+        position: absolute;
+        top: 52%;
+        left: 7%;
+        transform: translate(0, -50%);
+    }
     
+    .blog:nth-child(2){
+        position: absolute;
+        top: 52%;
+        right: 7%;
+        transform: translate(0, -50%);
+    }
+
+    .blog:nth-child(3){
+        position: absolute;
+        bottom: 8.45%;
+        left: 21.65%;   
+    }
+
+    .blog:nth-child(4){
+        position: absolute;
+        bottom: 8.4%;
+        right: 21.65%;  
+    }
+
+    .change{
+        right: 7.45rem;
+        top: 4.1rem;
+        width: 1.3rem;
+        height: 1.3rem;
+        font-size: 70%;
+    }
+
+    #app{
+        margin: 41.5% 7.4% auto auto;
+    }
+
+    .motto{
+        top: 16.7rem;
+        font-size: 4rem;
+        font-weight: initial;
+    }   
 }
 
 @media (min-width: 1920) {

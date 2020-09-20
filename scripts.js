@@ -10,7 +10,7 @@ num=0;
 
 
 $(document).ready( () => {
-  setTimeout(removeGif, 9999)
+  setTimeout(removeGif, 10102)
   setInterval(randWord, 330)
 } )
 
@@ -63,6 +63,9 @@ $(".change").on('click', () => {
   $('.bg-logo').toggleClass('white')
   // $('.frames').fadeOut().toggleClass('white').fadeIn()
   $('.main-logo').toggleClass('logo-white')
+  $('.element-1').toggleClass('elem-1W')
+  $('.element-2').toggleClass('elem-2W')
+  
   if(clicked){
     $('.frames').animate({
       backgroundColor: 'white'
@@ -82,7 +85,7 @@ $(".change").on('click', () => {
 });
 
 function removeGif(){
-  $('.video-layer').fadeOut().css('background-image', 'none')
+  $('.video-layer').fadeOut('slow').css('background-image', 'none')
   $('.video-layer').css('z-index', '-50')
 }
 
