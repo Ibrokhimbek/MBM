@@ -693,7 +693,7 @@
 @media screen and (max-width: 1919px){
      .video-layer{
         background-image: url('img/sv7.gif');
-        z-index: -1;
+        
     }
     .border-out{
         position: relative;
