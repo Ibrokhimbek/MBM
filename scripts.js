@@ -10,7 +10,7 @@ num=0;
 
 
 $(document).ready( () => {
-  setTimeout(removeGif, 10102)
+  setTimeout(removeGif, 9999)
   setInterval(randWord, 330)
 } )
 

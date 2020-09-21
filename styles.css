@@ -101,7 +101,7 @@
     background-position: top bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 50;
+    z-index: -1;
 }
 
 
@@ -125,8 +125,8 @@
 
 .border-out {
     display: block;
-    height: 95%;
-    width: auto;
+    max-height: 95%;
+    max-width: 95%;
     position: relative;
     overflow: hidden;
     background-color:none; 
@@ -144,13 +144,13 @@
 
 .border-in{
     display: block;
-    height: 96%;
+    max-height: 96%;
     width: auto;
     position: relative;
     overflow: hidden;
     background-color: none;
     border: 2px double #C80000;
-    margin: .9rem 0.9rem 0.1rem 0.9rem;
+    /* margin: .9rem 0.9rem 0.1rem 0.9rem; */
 }
 
 
@@ -170,11 +170,7 @@
     top: 0rem;
     z-index: 100;
 }
-@media (min-width: 0px) and (max-width: 1200px){
-    .main-logo{
-        margin:-2.5rem auto;
-    }
-}
+
 
 .bg-logo{
     position: absolute;
@@ -188,7 +184,7 @@
 }
 
 .comp-name {
-    font: normal normal 24px/29px Montserrat;
+    /* font: normal normal 24px/29px Montserrat; */
     font-family: 'Montserrat', sans-serif;
     position: relative;
     margin: 0px auto 0px auto;
@@ -352,7 +348,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 0;
 }
 
 .elem-1W{
@@ -375,11 +371,12 @@
     background-repeat: no-repeat;
     zoom: 130%;
     /* z-index:; */
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .elem-2W{
     background-image: url('img/particle-w.png');
+    bottom: 34rem;
 }
 
 /* Language */
@@ -599,7 +596,7 @@
     background: url("img/Logo-white.png");
 }
 
-@media (min-width: 0px) and (max-width: 415px){
+@media screen and (max-width: 415px){
     .video-layer{
         background-image: none;
         z-index: -50;
@@ -614,26 +611,33 @@
     
 }
 
-@media (min-width: 1025px) and (max-width: 1366px){
+@media screen and (max-width: 1366px){
     .video-layer{
         background-image: url('img/sv04.gif');
+        max-width: 100%;
+        max-height: 91%;
     
     }
     .border-out{
         position: relative;
-        height: 94%;
+        max-width: 100%;
+        max-height: 83.4%;
         top: -2.1rem;
-        margin: auto 3.72% auto 6.2%;
+        margin: auto 0.72% 5% 6.2%;
     }
     .border-in{
         position: relative;
-        height: 97%;
-        margin: .5rem 0.5rem 0.5rem 0.6rem;
+        max-width: 100%;
+        max-height: 100%;
+        top: -1%;
+        /* margin: 0.1% 0.5rem 5% 0.6rem; */
     }
     .comp-name{
-        font-size: 1rem;
-        top: 0rem;
-        left: 1rem;
+        font-size: medium;
+        zoom: 86%;
+        /* top: 90rem; */
+        /* margin-bottom: 10%; */
+        bottom: 190%;
     }
     .blog {
         position: relative;
@@ -675,12 +679,12 @@
     }
 
     #app{
-        margin: 40.5% 5.1% auto auto;
+        margin: 38.5% 5.1% auto auto;
     }
 
     .motto{
-        top: 15.2rem;
-        font-size: 3.7rem;
+        top: 10.2rem;
+        font-size: 1.7rem;
         font-weight: initial;
         z-index: 1;
     }
