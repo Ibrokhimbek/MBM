@@ -101,9 +101,8 @@
     background-position: top bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
+    z-index: 50;
 }
-
 
 .frames {
     position: absolute;
@@ -115,12 +114,6 @@
     -moz-animation: fade 0.5s cubic-bezier(0.42, 0, 0, 0.995);
     -webkit-animation: fade 0.5s cubic-bezier(0.42, 0, 0, 0.995);
     animation: fade 0.5s cubic-bezier(0.42, 0, 0, 0.995)
-}
-
-@media (min-width: 0) and (max-width: 960px){
-    .frames {
-        /* padding: auto a; */
-    }
 }
 
 .border-out {
@@ -196,7 +189,7 @@
     /* border: 2px double white; */
     z-index: 20;
     background-color: #000;
-    top: -0.9rem;
+    top: -2.5vh;
 }
 
 @font-face {
@@ -215,7 +208,7 @@
     /* font-size: 4rem; */
     position: relative;
     text-align: center;
-    z-index: 40;
+    z-index: 5;
     top: 16.7rem;
 }
 
@@ -385,65 +378,14 @@
     position: relative;
     width: 150px;
     height: 100px;
-    z-index: 10;
     margin: 41.5% 7.4% auto auto;
-    /* top: 60%; */
+    /* top: 20%; */
     /* right: 3.1%; */
     /* left: 90%; */
     z-index: 15;
     /* background: #fff;
     border: 5px white; */
 }
-
-/* IPhone 6 */
-
-/* @media (min-width: 487px) and (max-width: 1023px){
-    #app{
-        margin: 103.2% 7% auto auto;
-        font-size: 0.8rem;
-    }
-    .comp-name{
-        font-size: 0.9rem;
-        margin: 2.5% auto auto auto;
-    }
-} */
-
-/* IPad */
-/* 
-@media (min-width: 1024px) and (max-width: 1438px){
-    #app{
-        margin: 58% 5% auto auto;
-        font-size: 0.9rem;
-    }
-} */
-
-/* Laptop */ 
-
-/* @media (min-width: 1439px) and (max-width: 1679px){
-    #app{
-        margin: 40% 4% auto auto;
-    }
-    .comp-name{
-        margin: .3% auto auto auto;
-    }
-} */
-
-/* Desktop 1 */
-
-/* @media (min-width: 1680px) and (max-width: 1969px){
-    #app{
-        margin: 39% 5% auto auto;
-    }
-} */
-
-/* Desktop 2 */
-
-/* @media (min-width: 1970px) {
-    #app{
-        margin: 39% 5% auto auto;
-    }
-} */
-
 
 .lang-link {
     text-decoration: none;
@@ -596,52 +538,66 @@
     background: url("img/Logo-white.png");
 }
 
-@media screen and (max-width: 415px){
+@media screen
+  and (min-width: 0px) 
+  and (max-width: 361px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+  { 
     .video-layer{
         background-image: none;
         z-index: -50;
     }
 }
 
-@media (min-width: 416px) and (max-width: 768px){
 
-}
-
-@media (min-width: 769px) and (max-width: 1024px){
-    
-}
-
-@media screen and (max-width: 1366px){
+@media screen
+  and (min-width: 1200px) 
+  and (max-width: 1400px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+  { 
     .video-layer{
         background-image: url('img/sv04.gif');
         max-width: 100%;
-        max-height: 91%;
+        max-height: 89%;
     
     }
-    .border-out{
+
+    .border-out {
+        display: block;
+        height: 92.3%;
+        max-width: 95%;
         position: relative;
-        max-width: 100%;
-        max-height: 83.4%;
+        overflow: hidden;
+        background-color:none; 
+        border: 2px double #BCBDBF;
+        margin: auto 1% auto 6.1%;
         top: -2.1rem;
-        margin: auto 0.72% 5% 6.2%;
     }
+   
     .border-in{
+        display: block;
+        height: 100%;
+        max-width: auto;
         position: relative;
-        max-width: 100%;
-        max-height: 100%;
-        top: -1%;
-        /* margin: 0.1% 0.5rem 5% 0.6rem; */
+        overflow: hidden;
+        background-color: none;
+        border: 2px double #C80000;
+        margin: 0.3%;
+        margin: 0.3% 0.3% 0.1% 0.3%;
     }
+
+  
     .comp-name{
         font-size: medium;
         zoom: 86%;
         /* top: 90rem; */
         /* margin-bottom: 10%; */
-        bottom: 190%;
+        /* bottom: 190%; */
+        top: 3vh;
     }
     .blog {
         position: relative;
-        width: 145px;
+        width: 125px;
         height: 45px;
     }
     .blog:nth-child(1){
@@ -660,13 +616,13 @@
 
     .blog:nth-child(3){
         position: absolute;
-        bottom: 9.45%;
+        bottom: 20.45%;
         left: 22.4%;   
     }
 
     .blog:nth-child(4){
         position: absolute;
-        bottom: 9.4%;
+        bottom: 20.4%;
         right: 19.75%;  
     }
 
@@ -679,22 +635,26 @@
     }
 
     #app{
-        margin: 38.5% 5.1% auto auto;
+        margin: 35.5% 6.1% auto auto;
+        /* top: -50%; */
     }
 
     .motto{
-        top: 10.2rem;
+        position: relative;
+        top: 15.2rem;
         font-size: 1.7rem;
         font-weight: initial;
         z-index: 1;
     }
 }
 
-@media ( 1367px <= width >= 1440px){
-    
-}
 
-@media screen and (max-width: 1919px){
+
+@media screen 
+  and (min-width: 1401px) 
+  and (max-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+  { 
      .video-layer{
         background-image: url('img/sv7.gif');
         
@@ -762,8 +722,4 @@
         font-size: 4rem;
         font-weight: initial;
     }   
-}
-
-@media (min-width: 1920) {
-    
 }
